@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang= "pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" conten="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Média final</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Style+Script&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <header>
+            
+                <div id="logo">
+                 <h1 id= "logo1" lang="en">RED VELVET&nbsp;</h1>
+                 <h1 id="logo2">Escola de Gastronomia</h1>   
+                </div>               
+            
+        </header>
+    
+
+    <div id="main">  
+
+        <h2>Digite as suas notas e saiba se o resultado foi "aprovado" ou "reprovado".</h2>
+
+        <div id="grades">
+            
+            <label for="grade1">Digite a sua primeira nota:</label>
+            <input type="number" name="grade1" id="grade1"/>
+
+            <label for="grade2">Digite a sua segunda nota:</label>
+            <input type="number" name="grade2" id="grade2"/>
+
+            <label for="grade3">Digite a sua terceira nota:</label>
+            <input type="number" name="grade3" id="grade3"/>
+
+            <!-- Minha ideia original era organizar os inputs e labels horizontalmente, daí usaria &nbsp; Entretanto, ao mudar de ideia e organizar os itens com flex direction column, o efeito de espaço tornou-se o de pular linha, efeito que eu desconhecia. Para descobrir como eliminar o efeito, tive que tentar e errar várias vezes no CSS, até revisar as linhas de código aqui no HTML e retirar o &nbsp; uma vez que não precisaria mais de espaço entre label e input. E foi assim que descobri o efeito de pular linha do &nbsp;-->
+        </div>
+        
+
+        <input type="button" name="calcular" id="calcular"  Value="Calcular" onclick="calcular()"/>
+
+        <div id="res">RESULTADO</div> 
+
+    </div>
+
+    <footer>Exercício de JavaScript por Romulo Craveiro &nbsp;|
+        <a href="https://github.com/romulocraveiro/" target="_blank" alt = "Link para o perfil do Github"> &nbsp; GitHub:
+            <i class="fab fa-github-square" alt="Ícone do Github"></i>
+        </a> 
+    </footer>
+    
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/d6e302a14f.js" crossorigin="anonymous"></script>
+            
+    </body>
+
+</html>

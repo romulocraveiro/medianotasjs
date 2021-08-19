@@ -1,0 +1,164 @@
+/* resetting the css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Style Script', cursive;
+    background-image: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50) 100%),url(cutting-board.jpg);
+}
+
+#logo1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 48px;
+}
+
+header{
+    background-color: rgb(238, 199, 218);
+    color: rgb(114, 14, 36);   
+}
+
+#logo{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+
+#logo2{
+    font-size: 32px;
+}
+
+#main{   
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    flex-direction:column;
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: rgba(238, 199, 218, 0.589);
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-right: 90px;
+    margin-left: 90px;    
+}
+
+h2{
+    font-size: 42px;
+}
+
+#grades{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;   
+}
+
+#grade1, #grade2, #grade3{
+    height: 48px;
+    width: 80px;
+    font-size: 32px;
+    text-align: center; 
+}
+
+#res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    width: 750px;
+    font-size: 150%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#calcular{  
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:#4B088A;
+    color:seashell;  
+    height: 50px;
+    width: 100px;
+    font-family: 'Style Script', cursive;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+#calcular:hover{
+    background-color:mediumvioletred;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: rgb(170, 160, 160);
+    margin-top:5px;
+    margin-bottom: 2%;
+    font-size: 150%;    
+}
+
+footer a{
+    color:rgb(170, 160, 160); /*Estilizar só o footer não adianta. Tem que estilizar a cor da âncora dentro do footer, no caso aqui o texto "GitHub" e o ícone.*/
+}
+
+.fab {
+    font-size:20px; 
+    color: rgb(170, 160, 160);
+    margin-left: 5px;
+}
+
+@media screen and (max-width:700px){
+
+    #logo1{
+        font-size: 200%;
+    }
+    #logo2{
+        font-size: 140%;
+    }
+    #main{
+        align-items: center;
+        margin: 10%;
+        padding: 3%;
+    }
+
+    h2{
+        font-size: 120%;
+        text-align: center;
+    }
+    #grades{
+        font-size: 88%;
+        
+    }
+    #res{
+        max-width:90%;
+    }
+
+    #grade1, #grade2, #grade3{
+        height: 38px;
+        width: 80px;
+        font-size: 20px;
+        
+    }
+}
+
+@media screen and (min-width:1000px){ 
+
+    #main{
+        padding: 1%;
+    }
+
+}
+
+
+
+/* Crédito da foto
+https://pixabay.com/pt/photos/t%c3%a1bua-de-cortar-fundo-culin%c3%a1ria-2680186/  */
